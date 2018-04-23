@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.symulacja.gieldy.controllers.panel.FundMarketInformationPanelController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="information_container_title" alignment="CENTER" text="Rynek Funduszy Inwestycyjnych" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </top>
+            <center>
+                <AnchorPane fx:id="information_box_label" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                  <VBox AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                              <Label prefHeight="20.0" text="Nazwa" />
+                        <TextField fx:id="namelabel" disable="true" prefHeight="25.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutY="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+                     <children>
+                              <Label prefHeight="20.0" text="Marża" />
+                        <TextField fx:id="marza" disable="true" prefHeight="25.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutY="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+                     <children>
+                              <Label prefHeight="20.0" text="Lista aktyw" />
+                        <TableView fx:id="table">
+                          <columns>
+                            <TableColumn fx:id="surowiec_name" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="-1.0" text="Waluta" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </VBox>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

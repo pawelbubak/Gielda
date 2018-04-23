@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.symulacja.gieldy.controllers.panel.ResourceInformationPanelController">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane>
+               <children>
+                  <GridPane minHeight="500.0" minWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints percentHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <AnchorPane minWidth="250.0">
+                           <children>
+                              <LineChart fx:id="wykres" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <xAxis>
+                                  <NumberAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </LineChart>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" />
+                           </GridPane.margin>
+                        </AnchorPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <top>
+                              <AnchorPane BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label fx:id="information_box_title1" alignment="CENTER" text="Dane Szczegółowe" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </top>
+                           <center>
+                              <AnchorPane fx:id="information_box_label" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <VBox spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label prefHeight="20.0" text="Nazwa" />
+                                                <TextField fx:id="namelabel" disable="true" prefHeight="25.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label prefHeight="20.0" text="Jednostka handlowa" />
+                                                <TextField fx:id="jednostkaLabel" disable="true" prefHeight="25.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label prefHeight="20.0" text="Aktualna Cena" />
+                                                <TextField fx:id="price" disable="true" prefHeight="25.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label prefHeight="20.0" text="Cena Maksymalna" />
+                                                <TextField fx:id="max_price" disable="true" prefHeight="25.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label prefHeight="20.0" text="Cena minimalna" />
+                                                <TextField fx:id="min_price" disable="true" prefHeight="25.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label prefHeight="20.0" text="Właściciel" />
+                                                <TextField fx:id="owner" disable="true" prefHeight="25.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label prefHeight="20.0" text="Ilość" />
+                                                <TextField fx:id="quantity" disable="true" prefHeight="25.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <ComboBox fx:id="jednostkaComboBox" layoutY="70.0" onAction="#jednostkaComboBoxOnAction" prefWidth="150.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0" />
+                                 </children>
+                              </AnchorPane>
+                           </center>
+                           <bottom>
+                              <AnchorPane BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveOnAction" prefWidth="80.0" text="Zapisz" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0" />
+                                    <Button fx:id="removeButton" mnemonicParsing="false" onAction="#removeOnAction" prefWidth="80.0" text="Usuń" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0" />
+                                 </children>
+                              </AnchorPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="information_box_title" alignment="CENTER" text="Surowiec" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+ATX
+RTS
+OMX Copenhagen 20
+CAC 40
+IBEX 35
+DAX
+OSE All Share
+Swiss Market
+FTSE 100
+FTSE MIB
+Dow Jones Industrial
+Nasdaq
+S&P 500
+All Ordinaries
+Shanghai Composite
+Hang Seng
+BSE 30
+Jakarta Composite
+Nikkei 225
+Seoul Composite
+KLSE Composite
+NZX 50
+Straits Times
+All Share
+Taiwan Weighted
+MerVal
+Bovespa
+IPSA
+IPC
+TA-100

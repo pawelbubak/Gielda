@@ -1,0 +1,352 @@
+.myAlert{
+    -fx-background-color: rgb(60,63,65);
+}
+
+.myAlert > *.button-bar > *.container{
+    -fx-background-color: rgb(43,43,43);
+    -fx-background-radius: 5;
+    -fx-border-color: rgb(100,100,100);
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+}
+
+.myAlert > *.button-bar > *.container .button{
+    -fx-text-fill: rgb(187,187,187);
+    -fx-border-color: rgb(70,73,75);
+    -fx-background-color: rgb(60,63,65);
+    -fx-padding: 0.4em 1.833333em 0.4em 1.833333em;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-margin: 0;
+}
+
+.myAlert > *.button-bar > *.container .button:hover{
+    -fx-text-fill: rgb(187,187,187);
+    -fx-border-color: rgb(80,83,85);
+    -fx-background-color: rgb(70,73,75);
+    -fx-padding: 0.4em 1.833333em 0.4em 1.833333em;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-margin: 0;
+}
+
+.myAlert > *.label.content{
+    -fx-text-fill: rgb(187,187,187);
+}
+
+.myAlert *.header-panel{
+    -fx-background-color: rgb(60,63,65);
+}
+.myAlert *.header-panel *.label{
+    -fx-text-fill: rgb(187,187,187);
+}
+
+.background {
+    -fx-background-color: rgb(60,63,65);
+}
+
+.label {
+    -fx-text-fill: rgb(187,187,187);
+}
+
+.menu-bar {
+    -fx-background-color: rgb(60,63,65);
+}
+
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing{
+    -fx-background: -fx-accent;
+    -fx-background-color: rgb(60,63,65);
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.menu-item {
+    -fx-background-color: rgb(60,63,65);
+}
+
+.menu-item:hover{
+    -fx-background-color: rgb(70,73,75);
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: rgb(60, 63, 65);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-opacity: 0.95;
+}
+
+.tool-bar{
+    -fx-background-color: rgb(60,63,65);
+    -fx-background-insets: 0;
+    -fx-padding: 0 0 0 10;
+    -fx-border-color: rgb(100,100,100);
+    -fx-border-width: 2 0 2 0;
+}
+
+.tool-bar .button {
+    -fx-text-fill: rgb(187,187,187);
+    -fx-border-color: rgb(60,63,65);
+    -fx-background-color: rgb(60,63,65);
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0.4em 1.833333em 0.4em 1.833333em;
+    -fx-margin: 0;
+}
+
+.tool-bar .button:hover {
+    -fx-text-fill: rgb(187,187,187);
+    -fx-border-color: rgb(187,187,187);
+    -fx-background-color: rgb(70,73,75);
+}
+
+.button{
+    -fx-text-fill: rgb(187,187,187);
+    -fx-border-color: rgb(60,63,65);
+    -fx-background-color: rgb(60,63,65);
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-margin: 0;
+}
+
+.button:hover {
+    -fx-border-color: rgb(187,187,187);
+    -fx-background-color: rgb(70,73,75);
+}
+
+#footer {
+    -fx-background-color: rgb(60,63,65);
+    -fx-border-color: rgb(100,100,100);
+    -fx-border-width: 2 0 0 0;
+}
+
+#content_container_label {
+    -fx-background-color: rgb(60,63,65);
+}
+/*
+.table-view, .table-view:focused {
+    -fx-background-color: rgb(36,36,36);
+    -fx-border-width: 0;
+}
+
+.table-view.column-header-background, .table-view .column-header-background .label, .table-view .column-header{
+    -fx-background-color: linear-gradient(rgb(60,63,65) 0%, rgb(80,83,85) 100%);
+    -fx-text-fill: rgb(187,187,187);
+}
+
+.table-view .table-cell{
+    -fx-text-fill: rgb(187,187,187);
+    -fx-border-color: rgb(187,187,187);
+    -fx-border-width: 0 1 1 0;
+}
+
+.table-row-cell {
+    -fx-background-color: rgb(43,43,43);
+    -fx-border-color: rgb(187,187,187);
+    -fx-border-width: 0;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.table-row-cell:selected, .table-row-cell:odd:selected {
+    -fx-background-color: #005797;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: rgb(55,58,60);
+    -fx-border-color: rgb(187,187,187);
+    -fx-border-width: 0;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}*/
+
+.table-view {
+    -fx-base: rgb(29,29,29);
+    -fx-control-inner-background: rgb(29,29,29);
+    -fx-background-color: rgb(29,29,29);
+    -fx-table-cell-border-color: transparent;
+    -fx-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: transparent transparent derive(-fx-base, 80%) transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label{
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected{
+    -fx-background-color: -fx-focus-color;
+}
+
+#marza, #cena, #cenaMax, #cenaMin, #budget, #currency, #jednostka{
+    -fx-alignment: center;
+}
+
+#name, #surname, #pesel, #town, #street, #country {
+    -fx-padding: 0 0 0 10;
+}
+
+#information_container {
+    -fx-background-color: rgb(70,73,75);
+}
+
+#information_container_title {
+    -fx-font-weight: 700;
+    -fx-font-size: 2em;
+}
+
+.combo-box, .combo-box .list-cell, .combo-box .list-view{
+    -fx-background-color: rgb(60,63,65);
+    -fx-text-fill: rgb(187,187,187);
+}
+
+.combo-box .list-cell:hover{
+    -fx-background-color: rgb(65,68,70);
+}
+
+.combo-box{
+    -fx-border-color: rgb(70,73,75);
+}
+
+.combo-box:hover {
+    -fx-border-color: rgb(187,187,187);
+    -fx-background-color: rgb(70,73,75);
+}
+
+#information_box_utitle{
+    -fx-font-weight: 700;
+}
+
+#information_box_title{
+    -fx-padding: 15 0 15 0;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: 700;
+}
+
+#information_box_label, #information_box_title1 {
+    -fx-padding: 0 0 0 10;
+    -fx-font-weight: 700;
+}
+
+#lista_indeksow, #surname, #dodatkowa_informacja, #budzet, #ulica, #miasto, #pesel, #country,
+#wynik, #kraj, #marza, #index, #data_zajec, #grupa, #semestr, #kierunek, #obroty, #fundname,
+#wolumen, #zkapital, #wkapital, #przychod, #zysk, #liczba_akcji, #waluta, #min_kurs, #jednostkaLabel,
+#max_kurs, #kurs_otwarcia, #kurs, #data_wyceny, #quantity, #owner, #min_price, #max_price, #price, #namelabel{
+    -fx-font-weight: 500;
+}
+
+.chart {
+    -fx-background-color: rgb(80,83,85);
+    -fx-padding: 15 10 0 0;
+}
+
+.axis {
+    -fx-tick-label-fill: rgb(187,187,187);
+}
+
+.axis-label {
+    -fx-text-fill: rgb(187,187,187);
+}
+
+#chart {
+    -fx-background-color: rgb(29,29,29);
+    -fx-padding: 0 10 10 0;
+}
+
+#chart .axis {
+    -fx-tick-label-fill: white;
+}
+
+#chart .axis-label {
+    -fx-text-fill: white;
+}
+
+#chart .chart-plot-background{
+    -fx-background-color: rgb(40,40,40);
+}
+
+#add_content .label, #remove_content .label{
+    -fx-font-weight: 700;
+}
+
+#add_content .button {
+    -fx-font-weight: 700;
+}
+
+.text-field {
+    -fx-text-fill: rgb(187,187,187);
+    -fx-background-color: rgb(60,63,65);
+    -fx-border-color: rgb(60,63,65);
+}
+
+.text-field:hover, .text-field:focused {
+    -fx-border-color: rgb(187,187,187);
+    -fx-background-color: rgb(70,73,75);
+}
+
+#listPane {
+    -fx-background-color: rgb(29,29,29);
+}
+
+#listPane .button{
+    -fx-background-color: rgb(35,35,35);
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Light";
+}
+
+#listPane .button:hover{
+    -fx-text-fill: white;
+}
+
+
+#listPane #moreButton, #listPane #editButton, #listPane #clearButton{
+    -fx-font-size: 10pt;
+}
+
+#information_container .table-view .table-row-cell{
+    -fx-font-weight: 500;
+}
+
+.tree-view, .tree-cell {
+    -fx-background-color: rgb(29,29,29);
+    -fx-text-fill: white ;
+    -fx-font-weight: 500;
+}
+
+.tree-cell:selected {
+    -fx-font-weight: bold ;
+}
+
+.list-view {
+    -fx-base: rgb(35,35,35);
+    -fx-control-inner-background: rgb(29,29,29);
+    -fx-background-color: rgb(40,40,40);
+    -fx-table-cell-border-color: transparent;
+    -fx-header-border-color: transparent;
+    -fx-padding: 5;
+}
