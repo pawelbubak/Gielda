@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.symulacja.gieldy.controllers.add.AddInvestorController">
+   <children>
+      <BorderPane layoutX="130.0" layoutY="68.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="add_button" mnemonicParsing="false" onAction="#dodajButtonOnAction" prefWidth="80.0" text="Dodaj" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0" />
+                  <Button fx:id="cancel_button" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefWidth="80.0" text="Anuluj" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label prefHeight="20.0" text="Imię">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Label>
+                        <TextField fx:id="nameTextField" prefHeight="25.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="55.0">
+                     <children>
+                        <Label prefHeight="20.0" text="Nazwisko" />
+                        <TextField fx:id="surnameTextField" prefHeight="25.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="110.0">
+                     <children>
+                        <Label prefHeight="20.0" text="PESEL" />
+                        <TextField fx:id="peselTextField" prefHeight="25.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="165.0">
+                     <children>
+                        <Label prefHeight="20.0" text="Domyślna waluta" />
+                        <ComboBox fx:id="walutaComboBox" onAction="#walutaComboBoxOnAction" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="220.0">
+                     <children>
+                        <Label prefHeight="20.0" text="Budżet" />
+                        <TextField fx:id="budzetTextField" prefHeight="25.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="rand_button" mnemonicParsing="false" onAction="#losujButtonOnAction" prefWidth="100.0" text="Losuj" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="290.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

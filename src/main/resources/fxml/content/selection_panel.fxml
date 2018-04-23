@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.symulacja.gieldy.controllers.content.SelectionPanelController">
+   <children>
+      <TilePane alignment="CENTER" hgap="30.0" vgap="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#openStockList" prefHeight="150.0" prefWidth="250.0" text="Akcje" />
+            <Button mnemonicParsing="false" onAction="#openFundList" prefHeight="150.0" prefWidth="250.0" text="Fundusze" />
+            <Button mnemonicParsing="false" onAction="#openStockExchangeList" prefHeight="150.0" prefWidth="250.0" text="Giełdy" />
+            <Button mnemonicParsing="false" onAction="#openIndexList" prefHeight="150.0" prefWidth="250.0" text="Indeksy" />
+            <Button mnemonicParsing="false" onAction="#openInvestorList" prefHeight="150.0" prefWidth="250.0" text="Inwestorzy" />
+            <Button mnemonicParsing="false" onAction="#openCountryList" prefHeight="150.0" prefWidth="250.0" text="Kraje" />
+            <Button mnemonicParsing="false" onAction="#openMarketList" prefHeight="150.0" prefWidth="250.0" text="Rynki" />
+            <Button mnemonicParsing="false" onAction="#openCompanyList" prefHeight="150.0" prefWidth="250.0" text="Spółki" />
+            <Button mnemonicParsing="false" onAction="#openResourceList" prefHeight="150.0" prefWidth="250.0" text="Surowce" />
+            <Button mnemonicParsing="false" onAction="#openCurrencyList" prefHeight="150.0" prefWidth="250.0" text="Waluty" />
+            <Button mnemonicParsing="false" onAction="#openCharts" prefHeight="150.0" prefWidth="250.0" text="Wykresy" />
+            <Button mnemonicParsing="false" onAction="#exit" prefHeight="150.0" prefWidth="250.0" text="Zakończ" />
+         </children>
+      </TilePane>
+   </children>
+</AnchorPane>
